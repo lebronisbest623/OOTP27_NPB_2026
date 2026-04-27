@@ -1,87 +1,63 @@
-# Contributing
+# Contributing to OOTP27 NPB 2026
 
 [한국어](./CONTRIBUTING.ko.md)
 
-Thank you for your interest in contributing to The World Mod.
+Thanks for helping improve the NPB 2026 quickstart for OOTP Baseball 27. This repository is the public release and feedback hub for the mod, so the most useful contributions are precise corrections, source links, and reproducible issue reports.
 
-## Ways to Contribute
+## What Helps Most
 
-### 1. Submit Issues
+- Roster fixes: team assignment, active/retired status, uniform number, handedness, position, name spelling, date of birth, height/weight, nationality, and player IDs.
+- Rating feedback: batting, pitching, fielding, pitch mix, velocity, no-record player fallback ratings, and obvious outliers.
+- Contract data: salary, multi-year contract terms, options, and missing minimum-salary cases.
+- Data sources: official NPB profile pages, club roster pages, Chadwick Register IDs, Baseball-Reference links, and other stable public references.
+- Quickstart bugs: load failures, duplicate players, missing players, broken logos/uniforms/ballparks, or anything that makes a new save behave incorrectly.
 
-Use GitHub Issues if you want to report:
+## Before Opening an Issue
 
-- incorrect player data
-- missing players
-- logo or uniform problems
-- ballpark issues
-- FaceGen issues
-- installation problems
-- feature requests
+Please check the latest GitHub Release and report the release tag you tested. If the issue is about a player, include as many stable identifiers as possible:
 
-No coding is required. Clear screenshots, file names, and short explanations are always helpful.
+- OOTP player ID, if visible in your export.
+- NPB official player page or player register link.
+- Team and roster status.
+- Expected value and current in-game value.
+- Screenshot or CSV row when it helps identify the exact player.
 
-### 2. Pull Requests
+Name-only reports are still welcome, but IDs and source links make fixes much faster.
 
-Pull requests are welcome for quickstart fixes, resource improvements, and documentation updates.
+## Issue Titles
 
-#### Option A: Web Upload
+Use a short prefix when possible:
 
-1. Fork the repository on GitHub.
-2. Open your fork and go to the folder you want to update.
-3. Click `Add file` -> `Upload files`.
-4. Upload your files.
-5. Commit the changes.
-6. Click `Contribute` -> `Open pull request`.
-7. Submit your pull request with a short explanation.
+- `[Roster]`
+- `[Ratings]`
+- `[Contracts]`
+- `[Uniforms]`
+- `[FaceGen]`
+- `[Ballparks]`
+- `[Crash]`
+- `[Credits]`
 
-#### Option B: Using Git
+## Pull Requests
 
-##### Step 1: Fork the Repository
+Small, focused pull requests are easiest to review. Good PRs usually do one of these:
 
-Fork the repository from the GitHub page.
+- Fix documentation or credits.
+- Add source links for known issues.
+- Provide a small, source-backed data correction.
+- Improve release notes or installation instructions.
 
-##### Step 2: Clone Your Fork
+Please do not upload copyrighted commercial game files, unrelated assets, or large generated files unless a maintainer asks for them. Quickstart release zips are published by the maintainer.
 
-```bash
-git clone https://github.com/YOUR_USERNAME/the-world-mod.git
-cd the-world-mod
-```
+## Data Standards
 
-##### Step 3: Add Your Changes
+Prefer stable IDs over name-only matching. When two sources conflict, official NPB pages and club pages should be treated as the first reference point, then Chadwick/Baseball-Reference style identifiers can be used to connect records across datasets.
 
-Please place files in the appropriate location:
+For player names, use the spelling that best matches the OOTP roster unless a source-backed correction is needed.
 
-| Content | Folder |
-|---------|--------|
-| Quickstart files | `THE_WORLD_MOD.quick/` |
-| Uniforms | `the-world-mod/uniform/` |
-| Logos | `the-world-mod/logos/` |
-| FaceGen | `the-world-mod/fg_files/` |
-| Ballparks | `the-world-mod/ballparks/` |
-| Documentation | repository root |
+## Beta Policy
 
-##### Step 4: Commit and Push
+This mod is currently distributed as a beta quickstart. Data fixes may be batched into the next beta release instead of being released one by one. Larger database or regeneration changes may need extra testing before they appear in a public release.
 
-```bash
-git add .
-git commit -m "Describe your contribution"
-git push
-```
+## Credits
 
-##### Step 5: Open a Pull Request
-
-1. Go to your fork on GitHub.
-2. Click `Contribute` -> `Open pull request`.
-3. Explain what you changed and why.
-4. Submit the pull request.
-
-## Guidelines
-
-- Keep file names consistent with the existing release structure.
-- Do not rename folders unless there is a clear reason.
-- If you update a licensed or credited asset, include the source and permission context when possible.
-- If you change player data or visual assets, mention exactly which teams or players were affected.
-
-## Questions?
-
-Open an issue if you are unsure where a contribution belongs.
+Keep `CREDITS.md` accurate. If you submit or identify an asset that requires attribution, include the creator, source URL, and permission/license note.
