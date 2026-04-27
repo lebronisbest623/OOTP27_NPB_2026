@@ -12,8 +12,10 @@ OOTP Baseball 27 NPB 2026 quickstart beta.
 
 Get the latest beta quickstart from the [Releases](https://github.com/lebronisbest623/OOTP27_NPB_2026/releases) page.
 
+The current repository-published quickstart is also available in [`release/`](./release/).
+
 ## Links
 
 - [Credits](./CREDITS.md)
 - [Contributing](./CONTRIBUTING.md)
-- [기여 가이드](./CONTRIBUTING.ko.md)
+- [Korean Contributing Guide](./CONTRIBUTING.ko.md)
